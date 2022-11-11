@@ -1,0 +1,136 @@
+#container {
+  display: grid;
+  grid-template-columns: 13em 40.5em 23em;
+  grid-template-rows: 5em 12em 12em 12em 10.3em;
+  gap: 5px;
+  grid-template-areas:
+    "a a a"
+    "d e f"
+    "g h i"
+    "g2 h2 i2"
+    "j j j";
+}
+
+#noticia1 {
+  grid-area: e;
+  text-align: left;
+}
+
+#noticia2 {
+  grid-area: h;
+  float: right;
+}
+
+#noticia3 {
+  grid-area: h2;
+  text-align: left;
+}
+
+#noticia4 {
+  grid-area: i;
+  text-align: center;
+}
+
+#noticialateral {
+  grid-area:i;
+  text-align: center;
+}
+
+#logo{
+  grid-area: a;
+  width: 200px;
+  height: 80px;
+}
+
+#logo2{
+  grid-area:j;
+  width: 200px;
+  height: 80px;
+  margin-left: 1040px;
+}
+
+#img1 {
+  grid-area: d;
+  justify-self: center;
+  align-self: center;
+  border-radius: 10px;
+}
+
+#img2 {
+  grid-area: h;
+  align-self: center;
+  justify-self: right;
+  border-radius: 10px;
+  float: right;
+}
+
+#img3 {
+  grid-area: g2;
+  justify-self: center;
+  align-self: center;
+  border-radius: 10px;
+}
+
+#img4 {
+  grid-area: f;
+  justify-self: center;
+  align-self: flex-end;
+  border-radius: 10px;
+}
+
+#header {
+  font-family:TeX Gyre Adventor, URW Gothic L, sans-serif;
+  grid-area: a;
+  background-image: linear-gradient(20deg, #7159c1, rgb(128, 128, 128));
+  color: white;
+  justify-items: center;
+  text-align: center;
+  border-radius: 5px;
+  font-size: 18px;
+}
+
+#tabela{
+  grid-area: j;
+  margin-left: 100px;
+  margin-top: -20px;
+ 
+  color:white;
+}
+
+#footerdescricao{
+  grid-area: j;
+  background-image: linear-gradient(20deg, #7159c1, rgb(128, 128, 128));
+}
+
+#footer {
+  font-family:TeX Gyre Adventor, URW Gothic L, sans-serif;
+  grid-area: j;
+  text-align: center;
+  float: center;
+  font-size: 18px;
+  border-radius: 5px;
+  color: white;
+  height: 162px;
+  position: relative;
+  top: -12px;
+  display: inline;
+  font-size: 20pt;
+}
+
+#root {
+  background-color: rgb(244, 240, 240);
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  overflow: auto;
+}
+
+#dados{
+  grid-area: j;
+  color: white;
+  margin-left: 570px;
+  margin-top: -80px;
+  
+}
